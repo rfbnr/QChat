@@ -54,7 +54,7 @@ const ProfileAccount = ({ navigation }) => {
               onPress={() => {
                 setSaving(true);
                 setTimeout(() => {
-                  navigation.navigate("Walkthrough");
+                  navigation.navigate("BottomTabNavigation");
                   setSaving(false);
                 }, 4000);
               }}

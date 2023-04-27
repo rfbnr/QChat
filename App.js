@@ -7,6 +7,7 @@ import {
   Verification,
   Walkthrough,
 } from "./screens";
+import BottomTabNavigation from "./navigation/BottomTabNavigation";
 import Layout from "./components/Layout";
 
 const Stack = createNativeStackNavigator();
@@ -19,6 +20,10 @@ export default function App() {
           screenOptions={{ headerShown: false }}
           initialRouteName="Walkthrough"
         >
+          <Stack.Screen
+            name="BottomTabNavigation"
+            component={BottomTabNavigation}
+          />
           <Stack.Screen name="Walkthrough" component={Walkthrough} />
           <Stack.Screen name="Verification" component={Verification} />
           <Stack.Screen name="ProfileAccount" component={ProfileAccount} />
