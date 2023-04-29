@@ -5,7 +5,7 @@ import { COLORS } from "../constants";
 const PageContainer = ({ children }) => {
   return (
     <KeyboardAvoidingView
-      behavior={Platform.OS === "ios" ? "padding" : ""}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={{
         height: "100%",
         width: "100%",

@@ -4,7 +4,7 @@ import PhoneNumber from "./phoneNumber/PhoneNumber";
 import Verification from "./verification/Verification";
 import Chats from "./chats/Chats";
 import Contacts from "./contacts/Contacts";
-import More from "./more/More";
+import Settings from "./settings/Settings";
 import PersonalChat from "./personalChat/PersonalChat";
 
 export {
@@ -14,6 +14,6 @@ export {
   Verification,
   Chats,
   Contacts,
-  More,
+  Settings,
   PersonalChat,
 };

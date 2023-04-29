@@ -8,8 +8,8 @@ export const contacts = [
     isOnline: false,
     lastSeen: "3 Days ago",
     lastMessage: "How is it going...",
-    messageInQueue: 3,
-    sentDate: "12/7",
+    messageInQueue: 2,
+    sentDate: "12/7/22",
   },
   {
     id: "2",
@@ -19,7 +19,7 @@ export const contacts = [
     lastSeen: "Online",
     lastMessage: "Good morning...",
     messageInQueue: 0,
-    sentDate: "12/7",
+    sentDate: "12/7/22",
   },
   {
     id: "3",
@@ -29,7 +29,7 @@ export const contacts = [
     lastSeen: "2 weeks ago",
     lastMessage: "What's up...",
     messageInQueue: 0,
-    sentDate: "12/7",
+    sentDate: "12/7/22",
   },
   {
     id: "4",
@@ -38,7 +38,7 @@ export const contacts = [
     isOnline: true,
     lastSeen: "Online",
     lastMessage: "Send me the link",
-    messageInQueue: 0,
+    messageInQueue: 1,
     sentDate: "Today",
   },
   {
@@ -49,7 +49,7 @@ export const contacts = [
     lastSeen: "5 days ago",
     lastMessage: "We are doing...",
     messageInQueue: 0,
-    sentDate: "23/9",
+    sentDate: "23/9/22",
   },
   {
     id: "6",
@@ -69,7 +69,7 @@ export const contacts = [
     lastSeen: "Online",
     lastMessage: "How is it going...",
     messageInQueue: 3,
-    sentDate: "12/7",
+    sentDate: "12/7/22",
   },
   {
     id: "8",
@@ -79,7 +79,7 @@ export const contacts = [
     lastSeen: "Online",
     lastMessage: "How is it going...",
     messageInQueue: 3,
-    sentDate: "12/7",
+    sentDate: "12/7/22",
   },
   {
     id: "9",
@@ -88,7 +88,17 @@ export const contacts = [
     isOnline: true,
     lastSeen: "Online",
     lastMessage: "How is it going...",
-    messageInQueue: 3,
-    sentDate: "12/7",
+    messageInQueue: 1,
+    sentDate: "12/7/22",
+  },
+  {
+    id: "10",
+    userName: "Aris Biu",
+    userImg: images.user2,
+    isOnline: true,
+    lastSeen: "Online",
+    lastMessage: "How is it going...",
+    messageInQueue: 1,
+    sentDate: "12/7/22",
   },
 ];

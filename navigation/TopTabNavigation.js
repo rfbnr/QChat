@@ -1,26 +1,28 @@
 import React from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Chats, Contacts, More } from "../screens";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { Chats, Contacts, Settings } from "../screens";
 import TabIcon from "../components/TabIcon";
 import { COLORS } from "../constants";
 
-const Tab = createBottomTabNavigator();
+const Tab = createMaterialTopTabNavigator();
 
-const BottomTabNavigation = () => {
+const TopTabNavigation = () => {
   return (
     <Tab.Navigator
       screenOptions={{
         tabBarShowLabel: false,
         headerShown: false,
         tabBarHideOnKeyboard: true,
+        tabBarPressColor: COLORS.secondaryPrimary,
+        tabBarIndicatorStyle: {
+          backgroundColor: COLORS.secondaryPrimary,
+          height: "100%",
+          borderRadius: 60,
+        },
         tabBarStyle: {
-          position: "absolute",
           backgroundColor: COLORS.white,
-          bottom: 0,
-          right: 0,
-          left: 0,
           elevation: 0,
-          height: 60,
+          height: 50,
         },
       }}
     >
@@ -55,13 +57,13 @@ const BottomTabNavigation = () => {
       />
 
       <Tab.Screen
-        name="More"
-        component={More}
+        name="Settings"
+        component={Settings}
         options={{
           tabBarIcon: ({ focused }) => (
             <TabIcon
               focused={focused}
-              title="More"
+              title="Settings"
               nameIcon="settings-outline"
               nameIconFocused="settings-sharp"
             />
@@ -72,4 +74,4 @@ const BottomTabNavigation = () => {
   );
 };
 
-export default BottomTabNavigation;
+export default TopTabNavigation;

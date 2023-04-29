@@ -29,7 +29,7 @@ const Verification = ({ navigation, route }) => {
           <Text style={styles.headerText}>
             We have sent you an SMS with the code
             {"\n"}
-            to {numberCode} {phoneNumber}
+            to {numberCode || "+62"} {phoneNumber || "820 - 0000 - 0000"}
           </Text>
 
           <View style={{ marginVertical: 60 }}>
