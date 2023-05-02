@@ -7,7 +7,11 @@ const ContactsCard = ({ item, navigation }) => {
     <Pressable
       style={styles.contactsContainer}
       onPress={() =>
-        navigation.navigate("PersonalChat", { userName: item.userName })
+        navigation.navigate("PersonalChat", {
+          userName: item.userName,
+          message: item.lastMessage,
+          avatar: item.userImg,
+        })
       }
     >
       <View style={{ flexDirection: "row", alignItems: "center" }}>
