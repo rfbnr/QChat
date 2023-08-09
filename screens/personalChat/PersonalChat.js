@@ -15,7 +15,7 @@ const PersonalChat = ({ navigation, route }) => {
 
       <View style={styles.headerContainer}>
         <View style={styles.headerTitle}>
-          <TouchableOpacity onPress={() => navigation.navigate("Chats")}>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <MaterialIcons
               name="keyboard-arrow-left"
               size={24}

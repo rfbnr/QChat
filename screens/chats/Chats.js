@@ -13,6 +13,7 @@ import { MaterialCommunityIcons, Entypo } from "@expo/vector-icons";
 import PageContainer from "../../components/PageContainer";
 import ChatsCard from "../../components/ChatsCard";
 import StoryStatusCard from "../../components/StoryStatusCard";
+import FooterBottomBar from "../../components/FooterBottomBar";
 import styles from "./chats.style";
 import { contacts } from "../../constants/data";
 import { COLORS, FONTS } from "../../constants";
@@ -21,7 +22,7 @@ const Chats = ({ navigation }) => {
   const [search, setSearch] = useState("");
   const [filteredUsers, setFilteredUsers] = useState(contacts);
 
-  const handleSearchContact = (inputText) => {
+  const handleSearchChat = (inputText) => {
     setSearch(inputText);
     const filteredData = contacts.filter((user) =>
       user.userName.toLowerCase().includes(inputText.toLowerCase())
@@ -85,7 +86,7 @@ const Chats = ({ navigation }) => {
             <TextInput
               style={styles.inputSearch}
               selectionColor={COLORS.black}
-              onChangeText={handleSearchContact}
+              onChangeText={handleSearchChat}
               value={search}
               placeholder="Search Message..."
             />
@@ -96,6 +97,8 @@ const Chats = ({ navigation }) => {
               {filteredUsers.map((item) => (
                 <ChatsCard key={item.id} item={item} navigation={navigation} />
               ))}
+
+              <FooterBottomBar />
             </ScrollView>
           </View>
         </View>

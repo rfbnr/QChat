@@ -11,7 +11,7 @@ const Walkthrough = ({ navigation }) => {
     <SafeAreaView style={{ flex: 1 }}>
       <PageContainer>
         <View style={styles.container}>
-          <Image source={images.illustration} style={styles.image} />
+          <Image source={images.illustration2} style={styles.image} />
 
           <Text style={styles.headerTitle}>
             Connect easly with your family and friends over countries

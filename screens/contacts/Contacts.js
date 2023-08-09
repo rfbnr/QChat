@@ -11,6 +11,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
 import PageContainer from "../../components/PageContainer";
 import ContactsCard from "../../components/ContactsCard";
+import FooterBottomBar from "../../components/FooterBottomBar";
 import styles from "./contacts.style";
 import { contacts } from "../../constants/data";
 import { COLORS } from "../../constants";
@@ -69,6 +70,8 @@ const Contacts = ({ navigation }) => {
                   navigation={navigation}
                 />
               ))}
+
+              <FooterBottomBar />
             </ScrollView>
           </View>
         </View>

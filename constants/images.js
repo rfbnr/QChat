@@ -1,4 +1,5 @@
 const illustration = require("../assets/images/illustration.png");
+const illustration2 = require("../assets/images/illustration2.png");
 const cat = require("../assets/images/cat.png");
 const down = require("../assets/images/down.png");
 const usFlag = require("../assets/images/us-flag.jpg");
@@ -13,6 +14,7 @@ const user8 = require("../assets/images/user8.jpg");
 
 export default {
   illustration,
+  illustration2,
   cat,
   down,
   user1,
